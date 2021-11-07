@@ -15,7 +15,7 @@ namespace TestApp3_11._7._21_CM
 
             try
             {
-                Console.WriteLine(firstNumber + " * " + secondNumber + " = " + Multiply(firstNumber, secondNumber));
+                Console.WriteLine("\r\n" + firstNumber + " * " + secondNumber + " = " + Multiply(firstNumber, secondNumber));
             }
             catch (Exception ex)
             {
@@ -38,7 +38,7 @@ namespace TestApp3_11._7._21_CM
         {
             if (!BigInteger.TryParse(possibleNumber, out BigInteger actualNumber))
             {
-                throw new Exception($"Attempted conversion of '{possibleNumber ?? " < null > "}' failed.");
+                throw new Exception($"\r\nAttempted conversion of '{possibleNumber ?? " < null > "}' failed. \r\nPlease try again with only numbers.");
             }
 
             return actualNumber;
